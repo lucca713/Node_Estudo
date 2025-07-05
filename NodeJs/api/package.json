@@ -2,11 +2,13 @@
   "name": "api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/server.js",
+  "type":"module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node ./src/server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Lucca Santos Cerasomma",
   "license": "ISC"
 }
