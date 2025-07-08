@@ -4,8 +4,10 @@ import http from "node:http"
 const server =  http.createServer((req, res)=>{
     //errow function a gente consegue trabalhar envios do servidor e as requisicoes dos "clientes"
 
-    //resposta para quem fazer uma requisicao para o server
-    return res.end("Hello World!")
+    const {method} = req
+
+    //resposta para quem fa zer uma requisicao para o server
+    return res.end("Hello World!  " + method)
 })
 
 //numero da porta do server
